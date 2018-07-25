@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.example.yangfang.chinasok.mvp.ui.view.refresh.SmartRefreshLayout
+        android:id="@+id/swipe_refresh"
+        app:srlEnableLoadMore = "false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/include_weather"
+                layout="@layout/control_weather"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:id="@+id/home_logo"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@null"
+                android:scaleType="fitStart" />
+
+            <!--搜索框-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@color/home_bg_color"
+                android:paddingBottom="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="6dp">
+
+                <include
+                    android:id="@+id/control"
+                    layout="@layout/control_search_bar" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TabLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/add_channel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.example.yangfang.chinasok.mvp.ui.view.refresh.SmartRefreshLayout>
+
+</RelativeLayout>

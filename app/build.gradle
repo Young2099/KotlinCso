@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        flavorDimensions "versionCode"
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+    }
+//    javaCompileOptions {
+//        annotationProcessorOptions {
+//            includeCompileClasspath false
+//        }
+//    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    /* base */
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+    implementation rootProject.ext.dependencies["design"]
+    implementation rootProject.ext.dependencies["support-v4"]
+
+    /* dagger2*/
+    implementation rootProject.ext.dependencies["dagger"]
+    /*Kotlin user kapt not apt or annotationProcessor */
+    kapt rootProject.ext.dependencies["dagger-compiler"]
+    compileOnly rootProject.ext.dependencies["annotation"]
+    /*network */
+    implementation rootProject.ext.dependencies["retrofit"]
+    implementation rootProject.ext.dependencies["retrofit-converter-gson"]
+    implementation rootProject.ext.dependencies["retrofit-adapter-rxjava2"]
+    implementation rootProject.ext.dependencies["okhttp"]
+    implementation rootProject.ext.dependencies["okhttp-logging-interceptor"]
+}

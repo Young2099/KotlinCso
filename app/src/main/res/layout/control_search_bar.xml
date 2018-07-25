@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/saerchBarRl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/home_header_searchbar_height"
+    android:background="@drawable/bg_search_box">
+
+    <LinearLayout
+        android:id="@+id/pnlButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/btnAudio"
+            style="@style/home_search_bar"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@null"
+            android:src="@mipmap/home_voice_normal" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@null"
+            android:src="@mipmap/home_search_vertical_bar" />
+
+        <ImageView
+            android:id="@+id/btnCodebar"
+            style="@style/home_search_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@null"
+            android:src="@mipmap/home_camera_code" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/pnlButtons"
+        android:background="@color/transparent">
+
+        <TextView
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/face_icon"
+            android:background="@color/transparent"
+            android:ellipsize="end"
+            android:hint="@string/search_hint_like"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/news_hint"
+            android:textColorHint="@color/news_hint"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/face_icon"
+            style="@style/home_search_bar"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnSearch"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            style="@style/home_search_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

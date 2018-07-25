@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B4110C</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#F5F5F5</color>
+    <color name="text_weather">#a0a0a0</color>
+    <color name="transparent">#00000000</color>
+    <color name="news_hint">#d3d3d3</color>
+    <color name="home_bg_color">#f7f7f7</color>
+    <color name="gray">#e8e8e8</color>
+</resources>
