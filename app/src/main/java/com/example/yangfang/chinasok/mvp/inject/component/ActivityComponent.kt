@@ -1,5 +1,6 @@
 package com.example.yangfang.chinasok.mvp.inject.component
 
+import android.app.Activity
 import com.example.yangfang.chinasok.mvp.inject.module.ActivityModule
 import com.example.yangfang.chinasok.mvp.inject.scope.ActivityScope
 import com.example.yangfang.chinasok.mvp.ui.activity.MainActivity
@@ -12,4 +13,6 @@ import dagger.Component
 @Component(dependencies = [AppComponent::class], modules = [ActivityModule::class])
 interface ActivityComponent {
     fun inject(mainActivity: MainActivity)
+    fun getActivity(): Activity
+
 }

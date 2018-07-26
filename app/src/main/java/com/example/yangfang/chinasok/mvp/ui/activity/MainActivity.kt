@@ -4,6 +4,7 @@ import android.app.Fragment
 import android.view.View
 import com.example.yangfang.chinasok.R
 import com.example.yangfang.chinasok.mvp.app.ChinasoApp
+import com.example.yangfang.chinasok.mvp.base.BaseActivity
 import com.example.yangfang.chinasok.mvp.ui.fragment.HomeFragment
 import com.example.yangfang.chinasok.mvp.ui.fragment.NewsFragment
 import com.example.yangfang.chinasok.mvp.ui.fragment.VideoFragment

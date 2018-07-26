@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.activity
+package com.example.yangfang.chinasok.mvp.base
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -21,22 +21,28 @@ abstract class BaseActivity : AppCompatActivity() {
         initView()
     }
 
-     open fun inject(){}
-
-
-    abstract fun initView()
+    open fun inject() {}
 
     /**
      * 初始化数据
      */
-    open fun initData() {}
 
     abstract fun setLayoutId(): Int
+
+    /**
+     * 初始化参数
+     */
+    abstract fun initView()
+
+    open fun initData() {}
+
+
 
     fun getActivityComponent(): ActivityComponent = DaggerActivityComponent.builder()
             .appComponent(ChinasoApp.appComponent)
             .activityModule(getActivityModule()).build()
 
     private fun getActivityModule(): ActivityModule = ActivityModule(this)
+
 
 }

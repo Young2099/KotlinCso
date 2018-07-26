@@ -4,6 +4,9 @@ import android.app.Application
 import com.example.yangfang.chinasok.mvp.inject.component.AppComponent
 import com.example.yangfang.chinasok.mvp.inject.component.DaggerAppComponent
 import com.example.yangfang.chinasok.mvp.inject.module.AppModule
+import com.example.yangfang.chinasok.mvp.inject.module.HttpModule
+import com.example.yangfang.chinasok.mvp.inject.module.RetrofitModule
+import com.example.yangfang.chinasok.mvp.inject.module.ServiceModule
 
 /**
  * created by yf on 2018/7/9.
@@ -28,8 +31,10 @@ class ChinasoApp : Application() {
             DaggerAppComponent
                     .builder()
                     .appModule(AppModule(app))
+                    .httpModule(HttpModule())
+                    .retrofitModule(RetrofitModule())
+                    .serviceModule(ServiceModule())
                     .build()
-
 
 
 }

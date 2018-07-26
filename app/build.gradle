@@ -69,4 +69,5 @@ dependencies {
     implementation rootProject.ext.dependencies["retrofit-adapter-rxjava2"]
     implementation rootProject.ext.dependencies["okhttp"]
     implementation rootProject.ext.dependencies["okhttp-logging-interceptor"]
+    implementation 'com.yanzhenjie:permission:2.0.0-rc11'
 }

@@ -5,6 +5,7 @@ import android.app.Fragment
 import android.app.FragmentManager
 import android.app.FragmentTransaction
 import android.content.Context
+import android.content.Intent
 import android.widget.Toast
 
 /**
@@ -38,6 +39,12 @@ fun Activity.showFragment(fragment: Fragment) {
 
 fun Activity.hideFragment(fragment: Fragment) {
     fragmentManager.inTransaction { hide(fragment) }
+}
+
+fun commonStartActivity(forActivity: Activity, toActivity: Class<Any>) {
+    val intent = Intent()
+    intent.setClass(forActivity, toActivity)
+    forActivity.startActivity(intent)
 }
 
 
