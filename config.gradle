@@ -9,11 +9,12 @@ ext {
             versionName      : "1.1",
     ]
     def dependVersion = [
-            support    : "27.1.1",
-            retrofit   : "2.4.0",
-            okhttp     : "3.11.0",
-            dagger2    : "2.5",
-            leakcanary : "1.5.1",
+            support   : "27.1.1",
+            retrofit  : "2.4.0",
+            okhttp    : "3.11.0",
+            dagger2   : "2.5",
+            leakcanary: "1.5.1",
+            lifecycle : "1.1.1"
 
     ]
     dependencies = [
@@ -39,6 +40,11 @@ ext {
             "retrofit-adapter-rxjava2"  : "com.squareup.retrofit2:adapter-rxjava2:${dependVersion.retrofit}",
             "okhttp"                    : "com.squareup.okhttp3:okhttp:${dependVersion.okhttp}",
             "okhttp-logging-interceptor": "com.squareup.okhttp3:logging-interceptor:${dependVersion.okhttp}",
+
+            //lifecycle
+            "lifecycle-extensions"      : "android.arch.lifecycle:extensions:${dependVersion.lifecycle}",
+            "lifecycle-reactivestreams" : "android.arch.lifecycle:reactivestreams:${dependVersion.lifecycle}",
+            "lifecycle-compiler"        : "android.arch.lifecycle:compiler:${dependVersion.lifecycle}"
 //
 //            //rxJava
 //            "rxjava"                    : "io.reactivex.rxjava2:rxjava:2.1.0",

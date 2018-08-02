@@ -69,8 +69,13 @@ dependencies {
     implementation rootProject.ext.dependencies["retrofit-adapter-rxjava2"]
     implementation rootProject.ext.dependencies["okhttp"]
     implementation rootProject.ext.dependencies["okhttp-logging-interceptor"]
+    /* lifecycle */
+    implementation rootProject.ext.dependencies["lifecycle-extensions"]
+    implementation rootProject.ext.dependencies["lifecycle-reactivestreams"]
+    annotationProcessor rootProject.ext.dependencies["lifecycle-compiler"]
+    /*gson*/
+    implementation 'com.google.code.gson:gson:2.8.5'
+    /* permission*/
     implementation 'com.yanzhenjie:permission:2.0.0-rc11'
-    implementation "android.arch.lifecycle:extensions:1.1.1"
-    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
-    implementation "android.arch.lifecycle:reactivestreams:1.1.1"
+
 }

@@ -4,6 +4,7 @@ import android.app.Activity
 import com.example.yangfang.chinasok.inject.module.ActivityModule
 import com.example.yangfang.chinasok.inject.scope.ActivityScope
 import com.example.yangfang.chinasok.ui.activity.MainActivity
+import com.example.yangfang.chinasok.ui.activity.SplashActivity
 import dagger.Component
 
 /**
@@ -12,7 +13,10 @@ import dagger.Component
 @ActivityScope
 @Component(dependencies = [AppComponent::class], modules = [ActivityModule::class])
 interface ActivityComponent {
-    fun inject(mainActivity: MainActivity)
     fun getActivity(): Activity
+
+    fun inject(mainActivity: MainActivity)
+
+    fun inject(mainActivity: SplashActivity)
 
 }

@@ -5,18 +5,24 @@ import android.os.Handler
 import android.os.Message
 import com.example.yangfang.chinasok.R
 import com.example.yangfang.chinasok.base.BaseActivity
+import com.example.yangfang.chinasok.presenter.SplashPresenter
+import com.example.yangfang.chinasok.util.Constants.GO_GUIDE
+import com.example.yangfang.chinasok.util.Constants.GO_HOME
+import com.example.yangfang.chinasok.util.Constants.SPLASH_DELAY_MILLIS
 import com.example.yangfang.chinasok.util.commonStartActivity
 import com.example.yangfang.kotlindemo.util.SharedPreferenceUtil
 import com.yanzhenjie.permission.AndPermission
 import com.yanzhenjie.permission.Permission
+import javax.inject.Inject
 
 class SplashActivity : BaseActivity() {
 
-    companion object {
-        const val GO_HOME = 1000
-        const val GO_GUIDE = 2000
-        const val SPLASH_DELAY_MILLIS = 3000L
-    }
+
+    @Inject
+    lateinit var presenter: SplashPresenter
+    private val isFirst by SharedPreferenceUtil("app", true)
+    private val ids by SharedPreferenceUtil("splashId", "")
+
 
     private var mHandler: Handler = @SuppressLint("HandlerLeak")
     object : Handler() {
@@ -31,17 +37,18 @@ class SplashActivity : BaseActivity() {
         }
     }
 
-
-    private val isFirst by SharedPreferenceUtil("app", true)
-    private val ids by SharedPreferenceUtil("splashId","")
-
-
     override fun setLayoutId(): Int =
             R.layout.activity_splash
 
 
     override fun initView() {
+        lifecycle.addObserver(presenter)
         granted()
+    }
+
+    override fun inject() {
+        super.inject()
+        getActivityComponent().inject(this)
     }
 
     /**
@@ -77,7 +84,6 @@ class SplashActivity : BaseActivity() {
 
     private fun loadSplashData() {
         val time = System.currentTimeMillis()
-
 
     }
 

@@ -15,8 +15,11 @@ interface BasePresenter : LifecycleObserver {
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     fun onDestroy(owner: LifecycleOwner)
 
-    @OnLifecycleEvent(Lifecycle.Event.ON_ANY)
-    fun onLifecycleChanged(owner: LifecycleOwner, event: OnLifecycleEvent)
+    @OnLifecycleEvent(Lifecycle.Event.ON_START)
+    fun onStart(owner: LifecycleOwner)
+
+    @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
+    fun onResume(owner: LifecycleOwner)
 
 }
 
