@@ -1,7 +1,7 @@
 package com.example.yangfang.chinasok.inject.module
 
 import android.content.Context
-import com.example.yangfang.chinasok.mvp.app.ChinasoApp
+import com.example.yangfang.chinasok.app.ChinasoApp
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

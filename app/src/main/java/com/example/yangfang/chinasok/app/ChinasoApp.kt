@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.app
+package com.example.yangfang.chinasok.app
 
 import android.app.Application
 import com.example.yangfang.chinasok.inject.component.AppComponent

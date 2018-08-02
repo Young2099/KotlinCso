@@ -3,8 +3,8 @@ package com.example.yangfang.chinasok.ui.activity
 import android.support.v4.app.Fragment
 import android.view.View
 import com.example.yangfang.chinasok.R
+import com.example.yangfang.chinasok.app.ChinasoApp
 import com.example.yangfang.chinasok.base.BaseActivity
-import com.example.yangfang.chinasok.mvp.app.ChinasoApp
 import com.example.yangfang.chinasok.ui.fragment.HomeFragment
 import com.example.yangfang.chinasok.ui.fragment.NewsFragment
 import com.example.yangfang.chinasok.ui.fragment.VideoFragment

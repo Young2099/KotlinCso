@@ -3,7 +3,7 @@ package com.example.yangfang.kotlindemo.util
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
-import com.example.yangfang.chinasok.mvp.app.ChinasoApp
+import com.example.yangfang.chinasok.app.ChinasoApp
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 

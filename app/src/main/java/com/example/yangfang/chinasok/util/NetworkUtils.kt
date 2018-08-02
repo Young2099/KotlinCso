@@ -2,7 +2,7 @@ package com.example.yangfang.chinasok.util
 
 import android.content.Context
 import android.net.ConnectivityManager
-import com.example.yangfang.chinasok.mvp.app.ChinasoApp
+import com.example.yangfang.chinasok.app.ChinasoApp
 
 /**
  * created by yf on 2018/7/23.

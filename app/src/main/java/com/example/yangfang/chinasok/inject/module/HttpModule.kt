@@ -1,7 +1,7 @@
 package com.example.yangfang.chinasok.inject.module
 
 import com.example.yangfang.chinasok.BuildConfig
-import com.example.yangfang.chinasok.mvp.app.ChinasoApp
+import com.example.yangfang.chinasok.app.ChinasoApp
 import com.example.yangfang.chinasok.util.getCachePath
 import com.example.yangfang.chinasok.util.isNetWorkConnected
 import dagger.Module
