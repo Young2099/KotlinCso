@@ -1,8 +1,8 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.listener;
+package com.example.yangfang.chinasok.ui.view.refresh.listener;
 
 import android.support.annotation.NonNull;
 
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshLayout;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshLayout;
 
 
 /**

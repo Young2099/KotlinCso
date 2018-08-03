@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.util;
+package com.example.yangfang.chinasok.ui.view.refresh.util;
 
 public class DelayedRunnable implements Runnable {
     public long delayMillis;

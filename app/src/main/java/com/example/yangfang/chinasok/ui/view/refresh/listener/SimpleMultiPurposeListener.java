@@ -1,11 +1,12 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.listener;
+package com.example.yangfang.chinasok.ui.view.refresh.listener;
 
 import android.support.annotation.NonNull;
 
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshFooter;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshHeader;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshLayout;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.constant.RefreshState;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshFooter;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshHeader;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshLayout;
+import com.example.yangfang.chinasok.ui.view.refresh.constant.RefreshState;
+
 
 /**
  * 多功能监听器

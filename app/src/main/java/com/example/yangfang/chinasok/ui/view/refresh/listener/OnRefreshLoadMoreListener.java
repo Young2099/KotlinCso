@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.listener;
+package com.example.yangfang.chinasok.ui.view.refresh.listener;
 
 /**
  * 刷新加载组合监听器

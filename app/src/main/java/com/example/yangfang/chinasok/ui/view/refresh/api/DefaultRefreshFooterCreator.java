@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.api;
+package com.example.yangfang.chinasok.ui.view.refresh.api;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -10,5 +10,5 @@ import android.support.annotation.NonNull;
 
 public interface DefaultRefreshFooterCreator {
     @NonNull
-    RefreshFooter createRefreshFooter(@NonNull Context context, @NonNull RefreshLayout layout);
+ RefreshFooter createRefreshFooter(@NonNull Context context, @NonNull RefreshLayout layout);
 }

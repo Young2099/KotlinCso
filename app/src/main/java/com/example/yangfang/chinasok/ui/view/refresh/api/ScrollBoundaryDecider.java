@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.api;
+package com.example.yangfang.chinasok.ui.view.refresh.api;
 
 import android.view.View;
 

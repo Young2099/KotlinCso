@@ -1,12 +1,13 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.util;
+package com.example.yangfang.chinasok.ui.view.refresh.util;
 
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshKernel;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.listener.CoordinatorLayoutListener;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshKernel;
+import com.example.yangfang.chinasok.ui.view.refresh.listener.CoordinatorLayoutListener;
+
 
 /**
  * Design 兼容包缺省尝试

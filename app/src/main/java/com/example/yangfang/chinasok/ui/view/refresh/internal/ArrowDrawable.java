@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.internal;
+package com.example.yangfang.chinasok.ui.view.refresh.internal;
 
 import android.graphics.Canvas;
 import android.graphics.Path;

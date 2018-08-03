@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.footer;
+package com.example.yangfang.chinasok.ui.view.refresh.footer;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -15,11 +15,11 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.example.yangfang.chinasok.R;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshFooter;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshLayout;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.constant.SpinnerStyle;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.internal.InternalAbstract;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.util.DensityUtil;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshFooter;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshLayout;
+import com.example.yangfang.chinasok.ui.view.refresh.constant.SpinnerStyle;
+import com.example.yangfang.chinasok.ui.view.refresh.header.InternalAbstract;
+import com.example.yangfang.chinasok.ui.view.refresh.util.DensityUtil;
 
 import java.util.ArrayList;
 import java.util.HashMap;

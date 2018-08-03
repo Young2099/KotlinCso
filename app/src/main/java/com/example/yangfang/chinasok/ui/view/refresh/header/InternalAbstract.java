@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.internal;
+package com.example.yangfang.chinasok.ui.view.refresh.header;
 
 import android.content.Context;
 import android.support.annotation.ColorInt;
@@ -9,16 +9,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.SmartRefreshLayout;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshFooter;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshHeader;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshInternal;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshKernel;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshLayout;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.constant.RefreshState;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.constant.SpinnerStyle;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.impl.RefreshFooterWrapper;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.impl.RefreshHeaderWrapper;
+import com.example.yangfang.chinasok.ui.view.refresh.SmartRefreshLayout;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshFooter;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshHeader;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshInternal;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshKernel;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshLayout;
+import com.example.yangfang.chinasok.ui.view.refresh.constant.RefreshState;
+import com.example.yangfang.chinasok.ui.view.refresh.constant.SpinnerStyle;
+import com.example.yangfang.chinasok.ui.view.refresh.impl.RefreshFooterWrapper;
+import com.example.yangfang.chinasok.ui.view.refresh.impl.RefreshHeaderWrapper;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 

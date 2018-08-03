@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.internal;
+package com.example.yangfang.chinasok.ui.view.refresh.internal;
 
 import android.content.Context;
 import android.graphics.drawable.Animatable;
@@ -18,14 +18,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshInternal;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshKernel;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshLayout;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.constant.SpinnerStyle;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.util.DensityUtil;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshInternal;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshKernel;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshLayout;
+import com.example.yangfang.chinasok.ui.view.refresh.constant.SpinnerStyle;
+import com.example.yangfang.chinasok.ui.view.refresh.header.InternalAbstract;
+import com.example.yangfang.chinasok.ui.view.refresh.util.DensityUtil;
 
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
-import static com.example.yangfang.chinasok.mvp.ui.view.refresh.util.SmartUtil.getColor;
+import static com.example.yangfang.chinasok.ui.view.refresh.util.SmartUtil.getColor;
 
 
 /**

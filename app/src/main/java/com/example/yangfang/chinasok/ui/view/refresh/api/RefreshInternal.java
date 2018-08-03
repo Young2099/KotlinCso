@@ -1,12 +1,12 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.api;
+package com.example.yangfang.chinasok.ui.view.refresh.api;
 
 import android.support.annotation.ColorInt;
 import android.support.annotation.NonNull;
 import android.support.annotation.RestrictTo;
 import android.view.View;
 
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.constant.SpinnerStyle;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.listener.OnStateChangedListener;
+import com.example.yangfang.chinasok.ui.view.refresh.constant.SpinnerStyle;
+import com.example.yangfang.chinasok.ui.view.refresh.listener.OnStateChangedListener;
 
 import static android.support.annotation.RestrictTo.Scope.LIBRARY;
 import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;

@@ -1,9 +1,9 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.api;
+package com.example.yangfang.chinasok.ui.view.refresh.api;
 
 import android.animation.ValueAnimator;
 import android.support.annotation.NonNull;
 
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.constant.RefreshState;
+import com.example.yangfang.chinasok.ui.view.refresh.constant.RefreshState;
 
 
 /**

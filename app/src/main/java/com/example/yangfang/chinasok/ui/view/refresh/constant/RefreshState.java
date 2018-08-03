@@ -1,5 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.constant;
-
+package com.example.yangfang.chinasok.ui.view.refresh.constant;
 /**
  * 刷新状态
  */

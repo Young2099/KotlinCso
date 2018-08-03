@@ -1,10 +1,10 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.impl;
+package com.example.yangfang.chinasok.ui.view.refresh.impl;
 
 import android.annotation.SuppressLint;
 import android.view.View;
 
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshHeader;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.internal.InternalAbstract;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshHeader;
+import com.example.yangfang.chinasok.ui.view.refresh.header.InternalAbstract;
 
 
 /**

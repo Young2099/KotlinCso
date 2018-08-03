@@ -1,10 +1,9 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.impl;
+package com.example.yangfang.chinasok.ui.view.refresh.impl;
 
 import android.graphics.PointF;
 import android.view.View;
-
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.ScrollBoundaryDecider;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.util.ScrollBoundaryUtil;
+import com.example.yangfang.chinasok.ui.view.refresh.api.ScrollBoundaryDecider;
+import com.example.yangfang.chinasok.ui.view.refresh.util.ScrollBoundaryUtil;
 
 
 /**

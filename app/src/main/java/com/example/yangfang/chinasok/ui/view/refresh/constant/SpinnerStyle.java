@@ -1,5 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.constant;
-
+package com.example.yangfang.chinasok.ui.view.refresh.constant;
 /**
  * 顶部和底部的组件在拖动时候的变换方式
  * Created by SCWANG on 2017/5/26.

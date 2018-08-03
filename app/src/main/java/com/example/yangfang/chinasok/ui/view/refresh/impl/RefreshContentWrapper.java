@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.impl;
+package com.example.yangfang.chinasok.ui.view.refresh.impl;
 
 import android.animation.ValueAnimator;
 import android.animation.ValueAnimator.AnimatorUpdateListener;
@@ -15,23 +15,23 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.FrameLayout;
 
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshContent;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshKernel;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.ScrollBoundaryDecider;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.listener.CoordinatorLayoutListener;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.util.DesignUtil;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshContent;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshKernel;
+import com.example.yangfang.chinasok.ui.view.refresh.api.ScrollBoundaryDecider;
+import com.example.yangfang.chinasok.ui.view.refresh.listener.CoordinatorLayoutListener;
+import com.example.yangfang.chinasok.ui.view.refresh.util.DesignUtil;
 
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
-import static com.example.yangfang.chinasok.mvp.ui.view.refresh.util.ScrollBoundaryUtil.canScrollDown;
-import static com.example.yangfang.chinasok.mvp.ui.view.refresh.util.ScrollBoundaryUtil.canScrollUp;
-import static com.example.yangfang.chinasok.mvp.ui.view.refresh.util.ScrollBoundaryUtil.isTransformedTouchPointInView;
-import static com.example.yangfang.chinasok.mvp.ui.view.refresh.util.SmartUtil.isContentView;
-import static com.example.yangfang.chinasok.mvp.ui.view.refresh.util.SmartUtil.measureViewHeight;
-import static com.example.yangfang.chinasok.mvp.ui.view.refresh.util.SmartUtil.scrollListBy;
+import static com.example.yangfang.chinasok.ui.view.refresh.util.ScrollBoundaryUtil.canScrollDown;
+import static com.example.yangfang.chinasok.ui.view.refresh.util.ScrollBoundaryUtil.canScrollUp;
+import static com.example.yangfang.chinasok.ui.view.refresh.util.ScrollBoundaryUtil.isTransformedTouchPointInView;
+import static com.example.yangfang.chinasok.ui.view.refresh.util.SmartUtil.isContentView;
+import static com.example.yangfang.chinasok.ui.view.refresh.util.SmartUtil.measureViewHeight;
+import static com.example.yangfang.chinasok.ui.view.refresh.util.SmartUtil.scrollListBy;
 
 
 /**

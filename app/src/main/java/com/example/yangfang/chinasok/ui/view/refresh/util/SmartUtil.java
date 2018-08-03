@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.util;
+package com.example.yangfang.chinasok.ui.view.refresh.util;
 
 import android.content.Context;
 import android.os.Build;

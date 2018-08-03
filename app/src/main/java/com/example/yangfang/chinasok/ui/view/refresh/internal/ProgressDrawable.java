@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.internal;
+package com.example.yangfang.chinasok.ui.view.refresh.internal;
 
 import android.animation.ValueAnimator;
 import android.graphics.Canvas;

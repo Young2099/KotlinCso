@@ -6,8 +6,8 @@ import com.example.yangfang.chinasok.R
 import com.example.yangfang.chinasok.app.ChinasoApp
 import com.example.yangfang.chinasok.base.BaseActivity
 import com.example.yangfang.chinasok.ui.fragment.HomeFragment
+import com.example.yangfang.chinasok.ui.fragment.MusicFragment
 import com.example.yangfang.chinasok.ui.fragment.NewsFragment
-import com.example.yangfang.chinasok.ui.fragment.VideoFragment
 import com.example.yangfang.chinasok.util.addFragment
 import com.example.yangfang.chinasok.util.hideFragment
 import com.example.yangfang.chinasok.util.showFragment
@@ -17,7 +17,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
 
 
     private val newsFragment = NewsFragment()
-    private val videoFragment = VideoFragment()
+    private val videoFragment = MusicFragment()
     private val homeFragment = HomeFragment()
     private var currentFragment: Fragment? = null
     private var hideFragment: Fragment? = null

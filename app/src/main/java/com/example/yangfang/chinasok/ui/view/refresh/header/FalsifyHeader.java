@@ -1,5 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.header;
-
+package com.example.yangfang.chinasok.ui.view.refresh.header;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.DashPathEffect;
@@ -11,12 +10,12 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.yangfang.chinasok.R;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshHeader;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshKernel;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshLayout;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.constant.RefreshState;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.internal.InternalAbstract;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.util.DensityUtil;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshHeader;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshKernel;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshLayout;
+import com.example.yangfang.chinasok.ui.view.refresh.constant.RefreshState;
+import com.example.yangfang.chinasok.ui.view.refresh.util.DensityUtil;
+
 
 import static android.view.View.MeasureSpec.EXACTLY;
 import static android.view.View.MeasureSpec.makeMeasureSpec;

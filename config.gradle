@@ -1,6 +1,6 @@
 ext {
     android = [
-            compileSdkVersion: 25,
+            compileSdkVersion: 27,
             buildToolsVersion: '27.0.3',
             applicationId    : "com.example.yangfang.chinasok",
             minSdkVersion    : 15,

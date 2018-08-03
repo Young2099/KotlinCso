@@ -12,7 +12,7 @@ import android.view.ViewGroup
  */
 abstract class BaseFragment : Fragment() {
     private var mRootView: View? = null
-    lateinit var mActivity:Context
+    lateinit var mActivity: Context
 
     override fun onAttach(context: Context?) {
         super.onAttach(context)
@@ -20,14 +20,15 @@ abstract class BaseFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        if (mRootView == null){
-            mRootView  = inflater.inflate(setLayoutId(),null)
+        if (mRootView == null) {
+            mRootView = inflater.inflate(setLayoutId(), null)
         }
         return mRootView
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initData()
         initView(mRootView)
     }
 
@@ -35,4 +36,5 @@ abstract class BaseFragment : Fragment() {
 
     abstract fun setLayoutId(): Int
 
+    open fun initData() {}
 }

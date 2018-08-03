@@ -1,5 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.constant;
-
+package com.example.yangfang.chinasok.ui.view.refresh.constant;
 /**
  * 尺寸值的定义状态，用于在值覆盖的时候决定优先级
  * 越往下优先级越高

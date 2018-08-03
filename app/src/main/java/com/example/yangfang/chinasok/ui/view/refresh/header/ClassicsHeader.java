@@ -1,4 +1,4 @@
-package com.example.yangfang.chinasok.mvp.ui.view.refresh.header;
+package com.example.yangfang.chinasok.ui.view.refresh.header;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,14 +17,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.yangfang.chinasok.R;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshHeader;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.api.RefreshLayout;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.constant.RefreshState;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.constant.SpinnerStyle;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.internal.ArrowDrawable;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.internal.InternalClassics;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.internal.ProgressDrawable;
-import com.example.yangfang.chinasok.mvp.ui.view.refresh.util.DensityUtil;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshHeader;
+import com.example.yangfang.chinasok.ui.view.refresh.api.RefreshLayout;
+import com.example.yangfang.chinasok.ui.view.refresh.constant.RefreshState;
+import com.example.yangfang.chinasok.ui.view.refresh.constant.SpinnerStyle;
+import com.example.yangfang.chinasok.ui.view.refresh.internal.ArrowDrawable;
+import com.example.yangfang.chinasok.ui.view.refresh.internal.InternalClassics;
+import com.example.yangfang.chinasok.ui.view.refresh.internal.ProgressDrawable;
+import com.example.yangfang.chinasok.ui.view.refresh.util.DensityUtil;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
