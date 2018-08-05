@@ -24,14 +24,14 @@ private String mFileSize;
 private String mFilePath;
  */
 
-data class Music constructor(val mMusicId:Int,
-                              val mFileName:String,
-                              val mMusicName:String,
-                              val mMusicDuration:Int,
-                              val mMusicArtist:String,
-                              val mMusicAlbum:String,
-                              val mMusicYear:String,
-                              val mFileType:String,
-                              val mFileSize:String,
-                              val mFilePath:String)
+data class Music (val mMusicId:Int,
+                  val mFileName:String,
+                  val mMusicName:String,
+                  val mMusicDuration: Int,
+                  val mMusicArtist:String,
+                  val mMusicAlbum:String,
+                  val mMusicYear:String,
+                  val mFileType:String,
+                  val mFileSize:String,
+                  val mFilePath:String)
 
