@@ -2,15 +2,17 @@ package com.example.yangfang.chinasok.base
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.example.yangfang.chinasok.app.ChinasoApp
 import com.example.yangfang.chinasok.inject.component.ActivityComponent
 import com.example.yangfang.chinasok.inject.component.DaggerActivityComponent
 import com.example.yangfang.chinasok.inject.module.ActivityModule
-import com.example.yangfang.chinasok.app.ChinasoApp
 
 /**
  * created by yf on 2018/7/5.
  */
 abstract class BaseActivity : AppCompatActivity() {
+
+    private lateinit var basePresenter: BasePresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +20,7 @@ abstract class BaseActivity : AppCompatActivity() {
         inject()
         initData()
         initView()
-
+        lifecycle.addObserver(basePresenter)
     }
 
     open fun inject() {}

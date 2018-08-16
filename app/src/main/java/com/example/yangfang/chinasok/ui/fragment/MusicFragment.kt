@@ -19,7 +19,14 @@ import music.MusicService
  * created by yf on 2018/8/2.
  */
 
-class MusicFragment : BaseFragment() {
+class MusicFragment : BaseFragment(),View.OnClickListener {
+    override fun onClick(v: View) {
+        when(v.id){
+            R.id.play ->{ musicService.startPlay()}
+        }
+
+    }
+
     private var mPlayList = mutableListOf<Music>()
     private var cursor: Cursor? = null
     override fun initView(mRootView: View?) {
@@ -29,13 +36,13 @@ class MusicFragment : BaseFragment() {
         return R.layout.fragment_music
     }
 
-    private lateinit var musicService: MusicService
+    private lateinit var musicService: MusicService.MyBinder
 
     override fun initData() {
         super.initData()
         getPlayList()
         bindServiceConnection()
-        musicService = MusicService()
+        musicService = MusicService().MyBinder()
 
     }
 
@@ -52,7 +59,7 @@ class MusicFragment : BaseFragment() {
 
     private val sc = object : ServiceConnection {
         override fun onServiceConnected(componentName: ComponentName, iBinder: IBinder) {
-            musicService = (iBinder as MusicService.MyBinder).service
+            musicService = (iBinder as MusicService.MyBinder)
         }
 
         override fun onServiceDisconnected(componentName: ComponentName) {

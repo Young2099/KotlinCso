@@ -21,7 +21,9 @@ class MusicService:Service(),MediaPlayer.OnPreparedListener {
     private val binder: IBinder = MyBinder()
 
     inner class MyBinder : Binder() {
-        internal val service: MusicService
-            get() = this@MusicService
+        fun startPlay() {
+
+        }
+
     }
 }

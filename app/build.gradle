@@ -81,5 +81,13 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     /* permission*/
     implementation 'com.yanzhenjie:permission:2.0.0-rc11'
+    /*RxJava2*/
+    implementation rootProject.ext.dependencies["rxjava"]
+    implementation rootProject.ext.dependencies["rxandroid"]
+    /*room*/
+    implementation rootProject.ext.dependencies["room_runtime"]
+    annotationProcessor rootProject.ext.dependencies["room_compiler"]
+    implementation rootProject.ext.dependencies["room_rxjava2"]
+
 
 }

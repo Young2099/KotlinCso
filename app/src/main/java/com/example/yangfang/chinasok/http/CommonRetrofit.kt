@@ -19,5 +19,4 @@ class CommonRetrofit(client: OkHttpClient) {
             .build()
 
 
-
 }
